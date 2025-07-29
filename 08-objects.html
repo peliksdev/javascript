@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects</title>
+  </head>
+  <body>
+    
+    <script>
+
+      // const product = {
+      //   name: 'cellphone',
+      //   price: 100
+      // };
+      
+      // // console.log(product);
+      // // console.log(product.name);
+      // // console.log(product.price);
+
+      // //This is object to JSON
+      // console.log(JSON.stringify (product));
+
+      // //This is JSON to Object
+      // const jsonString = JSON.stringify (product);
+      // console.log(JSON.parse(jsonString));
+
+      console.log('hello'.length);
+      console.log('hello'.toUpperCase());
+
+      //Destructuring - short cut if the variable name and the 
+      //property are the same. Can take out multiple values out of an object
+
+      const object4 = {
+        message: 'hello',
+        price: 1000
+      };
+
+      const {message, price} = object4;
+      console.log(`${message}\n${price}`)
+
+      //Shorthand property - if the property and variable has the same name
+      const object5 = {
+        //message: message
+      
+        message
+      }
+      console.log(object5);
+
+      //Shorthand method - shortcut for writing methods which are functions inside an object. Parang gagawa ka na agad ng function
+      const object6 = {
+        method () {
+          console.log('shorthand method');
+        }
+      }
+      object6.method();
+    </script>
+  </body>
+</html>

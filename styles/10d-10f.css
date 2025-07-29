@@ -1,0 +1,15 @@
+.toggle-btn {
+  border: none;
+  padding: 10px 15px;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: 0.2s;
+}
+
+.is-toggled {
+  background-color: black;
+  color: white;
+  transition: 0.2s;
+}
