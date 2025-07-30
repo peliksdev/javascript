@@ -5,10 +5,17 @@
   </head>
   <body>
     <p>Todo List Practice 1</p>
-    <input type="text" placeholder="Todo name" class="js-todo-input">
+    <input type="text" placeholder="Todo name" class="js-todo-input1">
     <button onclick="
-    addToDoList();
+    addToDoList('.js-todo-input1');
     " class="js-add-btn">Add</button>
+
+    <p>Todo List Practice 1</p>
+    <input type="text" placeholder="Todo name" class="js-todo-input2">
+    <button onclick="
+    addToDoList('.js-todo-input2');
+    " class="js-add-btn">Add</button>
+    <p class="js-todo-name"></p>
     
     <script src="scripts/11-todo-list.js"></script>
   </body>
