@@ -1,14 +1,9 @@
 let toDoList = [];
-function addToDoList (selector) {
-  const inputElement = document.querySelector(selector);
+function addToDoList () {
+  const inputElement = document.querySelector('.js-todo-input');
+  const name = inputElement.value;
 
-  toDoList.push(inputElement.value);
+  toDoList.push(name);
   inputElement.value = '';
-  
-  if (selector === '.js-todo-input1') {
-    console.log(toDoList);
-  } else if (selector === '.js-todo-input2') {
-    document.querySelector('.js-todo-name').innerHTML = toDoList;
-  }
-
+  console.log(toDoList);
 }
