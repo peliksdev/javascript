@@ -9,38 +9,48 @@ function addToDoList () {
   console.log(toDoList);
 }
 
-let toDoList2 = [];
-let dateList = [];
+let toDoList2 = [{
+  name: 'make dinner',
+  dueDate: '06-22-2004'
+}];
+
 renderTodoList();
 
 function addToDoList2 () {
   const inputElement = document.querySelector('.js-todo-input2');
-  const inputDateElement = document.querySelector('.js-date');
+  const dateInputElement = document.querySelector('.js-date');
   const name = inputElement.value;
-  const date = inputDateElement.value;
+  const dueDate = dateInputElement.value;
 
-  toDoList2.push(name);
-  dateList.push(date);
+  toDoList2.push({
+    name,
+    dueDate
+  });
+  
   inputElement.value = '';
-  inputDateElement.value = '';
+  
   renderTodoList();
 }
 
 function renderTodoList () {
   let todoHTML = '';
-  for (let i = 0; i < toDoList2.length && i < dateList.length; i++) {
-    const todo = toDoList2[i];
-    const date = dateList[i];
-    const html = `<p>${todo} 
+  for (let i = 0; i < toDoList2.length; i++) {
+    const todoObject = toDoList2[i];
+    const {name} = todoObject;
+    const {dueDate} = todoObject;
+    const html = `<div>
+                    ${name}
+                  </div>
 
-                  <span>
-                    ${date}
-                  </span>
+                  <div>
+                    ${dueDate}
+                  </div>
 
-                  <button class="js-delete-btn"
+                  
+                  <button class="js-delete-btn delete-btn"
                   onclick = "deleteTask(${i});">Delete</button>
-
-                  </p>`;
+                  
+                  `;
     todoHTML += html;
   }
 

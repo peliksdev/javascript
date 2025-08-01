@@ -56,25 +56,38 @@
       // }
 
       //Accumulator Pattern
-      const nums = [1, 2, 3, 4, 5];
-      let total = 0;
+      // const nums = [1, 2, 3, 4, 5];
+      // let total = 0;
 
-      for (let i=0; i < nums.length; i++) {
-        const num = nums[i]
-        total += num;
-      }
+      // for (let i=0; i < nums.length; i++) {
+      //   const num = nums[i]
+      //   total += num;
+      // }
 
-      console.log(total);
+      // console.log(total);
 
-      //this is a new accumulator variable which is an array
-      let numsDoubled = [];
+      // //this is a new accumulator variable which is an array
+      // let numsDoubled = [];
 
-      for (let i = 0; i < nums.length; i++) {
-        const num = nums[i];
-        numsDoubled.push(num * 2);
-      }
+      // for (let i = 0; i < nums.length; i++) {
+      //   const num = nums[i];
+      //   numsDoubled.push(num * 2);
+      // }
 
-      console.log(numsDoubled);
+      // console.log(numsDoubled);
+
+      const array1 = [1,2,3]
+      const array2 = array1.slice();
+      array2.push(4);
+      console.log(array1);
+      console.log(array2);
+
+      //destructuring once again but for an array
+      const array3 = [1,2,3];
+
+      const [firstValue] = array3;
+
+      console.log(firstValue);
     </script>
   </body>
 </html>
