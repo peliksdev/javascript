@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced Functions</title>
+    <body>
+      
+      <script>
+        /*
+        function greeting() {
+          console.log('Hi There!');
+        }
+
+        greeting();
+
+        //Anonymous function - a function without a name
+        const function1 = function() {
+          console.log('Hello There!');
+        };
+
+        console.log(function1);
+        function1();
+
+        const object1 = {
+          fun: function () {
+            console.log('hello2 u 2');
+          }
+        }
+
+        object1.fun();
+
+        function display(param) {
+          param();
+        }
+
+        display(function() {
+          console.log('Run baby run!');
+        });
+          */
+
+          // setTimeout(function() {
+          //   console.log('timeOut');
+          // }, 3000);
+
+          // console.log('next line');
+
+          // setInterval(function(){
+          //   console.log('Interval');
+          // }, 10000);
+
+        [
+          'Make dinner',
+          'Wash dishes',
+          'Fuck later'
+        ].forEach(function(value) {
+          if (value === 'Wash dishes') {
+            return;
+          }
+
+          console.log(value);
+        });
+      </script>
+    </body>
+  </head>
+</html>
